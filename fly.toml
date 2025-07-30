@@ -1,0 +1,19 @@
+app = "binance-signal-bot"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  BOT_TOKEN = "8009615316:AAFmAiAA9_bjZaH4225zUVZ__Gfifq3l1ok"
+  CHAT_ID = "1973506173"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+
+  [[services.ports]]
+    port = 443
